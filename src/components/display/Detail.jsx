@@ -14,7 +14,13 @@ const Detail = ({ details }) => {
 };
 
 Detail.propTypes = {
-  details: PropTypes.object,
+  details: PropTypes.shape({
+    name: PropTypes.string,
+    photoUrl: PropTypes.string,
+    eye: PropTypes.string,
+    hair: PropTypes.string,
+    weapon: PropTypes.string,
+  }).isRequired,
 };
 
 export default Detail;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail component renders Detail 1`] = `
+<DocumentFragment>
+  <div>
+    Detail Screen
+    <h3>
+      tim
+    </h3>
+    <img
+      src="www.google.com"
+    />
+    <p>
+      Eye Color: brown
+    </p>
+    <p>
+      Hair Color: black
+    </p>
+    <p>
+      Ability: wind
+    </p>
+  </div>
+</DocumentFragment>
+`;

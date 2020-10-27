@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders List 1`] = `
+<DocumentFragment>
+  <div>
+    <h3>
+      Character List
+    </h3>
+    <a
+      class="character-name"
+      href="/details/1"
+    >
+      jim
+    </a>
+    <a
+      class="character-name"
+      href="/details/2"
+    >
+      fred
+    </a>
+  </div>
+</DocumentFragment>
+`;
