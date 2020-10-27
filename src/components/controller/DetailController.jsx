@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { getDetails } from '../../services/details-api';
 import Detail from '../display/Detail';
+import PropTypes from 'prop-types';
 
 const DetailController = ({ match }) => {
   const [loading, setLoading] = useState(true);
-  const [details, setDetails] = useState([]);
-
-  const id = window.location.pathname;
-  const splitId = id.split('/');
-  const idToUse = splitId[2];
-
-  console.log(match, 'match');
+  const [details, setDetails] = useState({});
 
   useEffect(() => {
-    getDetails()
+    getDetails(match.params.id)
       .then(details => setDetails(details))
       .finally(() => setLoading(false));
   }, []);
@@ -25,6 +20,10 @@ const DetailController = ({ match }) => {
       <Detail details={details} />
     </div>
   );
+};
+
+Detail.propTypes = {
+  match: PropTypes.object,
 };
 
 export default DetailController;

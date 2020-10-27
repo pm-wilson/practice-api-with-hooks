@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Detail = (details) => {
-  console.log(details, 'details');
+const Detail = ({ details }) => {
   return (
-    <div>Details
+    <div>Detail Screen
       <h3>{details.name}</h3>
       <img src={details.photoUrl}/>
       <p>Eye Color: {details.eye}</p>
       <p>Hair Color: {details.hair}</p>
-      <p>Ability: {details.weapon}</p>
+      {details.weapon && <p>Ability: {details.weapon}</p>}
     </div>
   );
 };
