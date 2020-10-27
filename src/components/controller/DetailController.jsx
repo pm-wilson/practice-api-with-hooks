@@ -13,10 +13,10 @@ const DetailController = ({ match }) => {
       .finally(() => setLoading(false));
   }, []);
 
-  if(loading) return <h1>Loading...</h1>;
+  if(loading) return <h1 data-testid="detailtest">Loading...</h1>;
 
   return (
-    <div>
+    <div data-testid="detailtest">
       <Detail details={details} />
     </div>
   );
