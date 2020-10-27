@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const List = ({ characters }) => {
   return (
@@ -9,7 +9,7 @@ const List = ({ characters }) => {
       {characters.map((character) => {
         return (
           <div key={character._id}>
-            <BrowserRouter><Link className="character-name" to={`/details/${character._id}`}>{character.name}</Link></BrowserRouter>
+            <Link className="character-name" to={`/details/${character._id}`}>{character.name}</Link>
             <br />
           </div>
         );
