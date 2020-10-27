@@ -6,18 +6,24 @@ exports[`List component renders List 1`] = `
     <h3>
       Character List
     </h3>
-    <a
-      class="character-name"
-      href="/details/1"
-    >
-      jim
-    </a>
-    <a
-      class="character-name"
-      href="/details/2"
-    >
-      fred
-    </a>
+    <div>
+      <a
+        class="character-name"
+        href="/details/1"
+      >
+        jim
+      </a>
+      <br />
+    </div>
+    <div>
+      <a
+        class="character-name"
+        href="/details/2"
+      >
+        fred
+      </a>
+      <br />
+    </div>
   </div>
 </DocumentFragment>
 `;

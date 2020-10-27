@@ -8,7 +8,11 @@ const List = ({ characters }) => {
       <h3>Character List</h3>
       {characters.map((character) => {
         return (
-          <BrowserRouter key={character._id}><Link className="character-name" to={`/details/${character._id}`}>{character.name}</Link></BrowserRouter>);
+          <div key={character._id}>
+            <BrowserRouter><Link className="character-name" to={`/details/${character._id}`}>{character.name}</Link></BrowserRouter>
+            <br />
+          </div>
+        );
       })}
     </div>
   );
